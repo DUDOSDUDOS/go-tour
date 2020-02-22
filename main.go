@@ -20,8 +20,6 @@ func main() {
 }
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
-	//user := User{"Кирилл", "Яйцеглист"}
-	//js, _ := json.Marshal(user)
 
 	tmpl, err := template.ParseFiles("static/index.html")
 	if err != nil {
